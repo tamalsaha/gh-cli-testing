@@ -3,6 +3,7 @@
 COMMIT_MSG="gh-cli-testing"
 
 git commit -a -s -m "$COMMIT_MSG"
+git push origin HEAD -f
 hub pull-request \
     --push \
     --labels automerge \
