@@ -1,6 +1,8 @@
 #!/bin/bash
 
-git commit -a -s -m "gh-cli-testing"
+COMMIT_MSG="gh-cli-testing"
+
+git commit -a -s -m "$COMMIT_MSG"
 hub pull-request \
     --push \
     --labels automerge \
